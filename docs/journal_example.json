@@ -1,0 +1,177 @@
+{
+  "id": "20261031-172817-040-fdac71",
+  "startedAt": "2026-10-31T17:28:17.0407786+03:00",
+  "finishedAt": "2026-10-31T17:28:17.0795736+03:00",
+  "mode": "Move",
+  "isDryRun": false,
+  "wasCancelled": false,
+  "sourceFolder": "C:\\Demo\\pdf-sorter\\samples",
+  "targetFolder": "C:\\Demo\\pdf-sorter\\sorted",
+  "summary": {
+    "total": 15,
+    "done": 14,
+    "dryRun": 0,
+    "skipped": 0,
+    "failed": 1,
+    "cancelled": 0,
+    "reverted": 0
+  },
+  "createdDirectories": [
+    "C:\\Demo\\pdf-sorter\\sorted",
+    "C:\\Demo\\pdf-sorter\\sorted\\Акты",
+    "C:\\Demo\\pdf-sorter\\sorted\\Акты\\2025",
+    "C:\\Demo\\pdf-sorter\\sorted\\Архив",
+    "C:\\Demo\\pdf-sorter\\sorted\\Архив\\2025",
+    "C:\\Demo\\pdf-sorter\\sorted\\Архив\\2025\\03",
+    "C:\\Demo\\pdf-sorter\\sorted\\Договоры",
+    "C:\\Demo\\pdf-sorter\\sorted\\Договоры\\2025",
+    "C:\\Demo\\pdf-sorter\\sorted\\Отчеты",
+    "C:\\Demo\\pdf-sorter\\sorted\\Отчеты\\2025",
+    "C:\\Demo\\pdf-sorter\\sorted\\Прочее",
+    "C:\\Demo\\pdf-sorter\\sorted\\Архив\\2025\\06",
+    "C:\\Demo\\pdf-sorter\\sorted\\Счета",
+    "C:\\Demo\\pdf-sorter\\sorted\\Счета\\2025",
+    "C:\\Demo\\pdf-sorter\\sorted\\Счета\\2025\\04",
+    "C:\\Demo\\pdf-sorter\\sorted\\Счета\\2025\\03",
+    "C:\\Demo\\pdf-sorter\\sorted\\Счета\\2025\\05",
+    "C:\\Demo\\pdf-sorter\\sorted\\Счета\\2025\\06"
+  ],
+  "operations": [
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Акт 2025-02-28.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Акты\\2025\\2025-02-28_Акт_01.pdf",
+      "action": "Move",
+      "rule": "Акты",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0447325+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Акт сверки 31.03.2025.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Архив\\2025\\03\\Акт сверки 31.03.2025.pdf",
+      "action": "Move",
+      "rule": "Архив по дате",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0567375+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Договор аренды.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Договоры\\2025\\Договор_А-48.pdf",
+      "action": "Move",
+      "rule": "Договоры",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0587593+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Договор поставки 2025-01-20.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Договоры\\2025\\Договор_Д-2025_017.pdf",
+      "action": "Move",
+      "rule": "Договоры",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.061221+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Отчет о продажах 2025-07-10.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Отчеты\\2025\\Отчет о продажах 2025-07-10.pdf",
+      "action": "Move",
+      "rule": "Отчёты",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0628493+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Памятка сотруднику.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Прочее\\Памятка сотруднику.pdf",
+      "action": "Move",
+      "rule": "(прочее)",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0644804+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Прайс-лист 01.06.2025.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Архив\\2025\\06\\Прайс-лист 01.06.2025.pdf",
+      "action": "Move",
+      "rule": "Архив по дате",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0661177+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Сканы\\scan_0012.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Договоры\\2025\\Договор_У-311.pdf",
+      "action": "Move",
+      "rule": "Договоры",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0685571+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Сканы\\scan_0013.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Акты\\2025\\2025-04-30_Акт_02.pdf",
+      "action": "Move",
+      "rule": "Акты",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0701877+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Сканы\\scan_0014.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Договоры\\2025\\Договор_Д-2025_017 (2).pdf",
+      "action": "Move",
+      "rule": "Договоры",
+      "status": "Done",
+      "message": "добавлен номер (имя занято)",
+      "timestamp": "2026-10-31T17:28:17.071805+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Сканы\\scan_0015.pdf",
+      "action": "Move",
+      "rule": "Акты",
+      "status": "Failed",
+      "message": "PDF не читается (повреждён или зашифрован: Could not find any xref tables or streams in this document and could not resolve brute force positions.)",
+      "timestamp": "2026-10-31T17:28:17.0734108+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Счёт 160 от 2025-04-02.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Счета\\2025\\04\\2025-04-02_Счет_160.pdf",
+      "action": "Move",
+      "rule": "Счета",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0734131+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Счет №145 от 14.03.2025.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Счета\\2025\\03\\2025-03-14_Счет_145.pdf",
+      "action": "Move",
+      "rule": "Счета",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0750503+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\счет №171 от 15.05.2025.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Счета\\2025\\05\\2025-05-15_Счет_171.pdf",
+      "action": "Move",
+      "rule": "Счета",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.0771504+03:00",
+      "reverted": false
+    },
+    {
+      "source": "C:\\Demo\\pdf-sorter\\samples\\Счет №183.pdf",
+      "destination": "C:\\Demo\\pdf-sorter\\sorted\\Счета\\2025\\06\\2025-06-30_Счет_183.pdf",
+      "action": "Move",
+      "rule": "Счета",
+      "status": "Done",
+      "timestamp": "2026-10-31T17:28:17.07839+03:00",
+      "reverted": false
+    }
+  ]
+}

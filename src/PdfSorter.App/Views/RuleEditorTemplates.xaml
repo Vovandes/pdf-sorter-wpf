@@ -1,0 +1,74 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:PdfSorter.App.ViewModels">
+
+    <!-- Часть редактора, своя для каждого типа правила. WPF выбирает шаблон по типу ViewModel. -->
+
+    <DataTemplate DataType="{x:Type vm:FileNameRuleViewModel}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" SharedSizeGroup="EditorLabel" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Имя файла" Style="{StaticResource FieldLabelStyle}" />
+            <TextBox Grid.Column="1"
+                     Style="{StaticResource MonoTextBoxStyle}"
+                     Text="{Binding Pattern, UpdateSourceTrigger=PropertyChanged}"
+                     ToolTip="Маска: * — любые символы, ? — один символ. Проверяется имя без расширения, затем полное имя." />
+            <WrapPanel Grid.Row="1" Grid.Column="1" Margin="0,6,0,0">
+                <RadioButton Content="Маска (* и ?)" IsChecked="{Binding IsWildcard}" />
+                <RadioButton Content="Регулярное выражение" IsChecked="{Binding IsRegex}" />
+                <CheckBox Content="Без учёта регистра" IsChecked="{Binding IgnoreCase}" />
+            </WrapPanel>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:DateRuleViewModel}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" SharedSizeGroup="EditorLabel" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Дата" Style="{StaticResource FieldLabelStyle}" />
+            <ComboBox Grid.Column="1"
+                      ItemsSource="{x:Static vm:DateRuleViewModel.SourceOptions}"
+                      DisplayMemberPath="Title"
+                      SelectedValuePath="Value"
+                      SelectedValue="{Binding Path=Source}" />
+            <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,6,0,0" Style="{StaticResource HintTextStyle}"
+                       Text="Если даты в имени нет, файл переходит к следующему правилу." />
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:PdfTextRuleViewModel}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" SharedSizeGroup="EditorLabel" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Текст 1-й стр." Style="{StaticResource FieldLabelStyle}" />
+            <TextBox Grid.Column="1"
+                     Style="{StaticResource MonoTextBoxStyle}"
+                     Text="{Binding Pattern, UpdateSourceTrigger=PropertyChanged}"
+                     ToolTip="Ключевое слово или регулярное выражение. Первая группа ( … ) подставляется в {match}." />
+            <WrapPanel Grid.Row="1" Grid.Column="1" Margin="0,6,0,0">
+                <RadioButton Content="Ключевое слово" IsChecked="{Binding IsKeyword}" />
+                <RadioButton Content="Регулярное выражение" IsChecked="{Binding IsRegex}" />
+                <CheckBox Content="Без учёта регистра" IsChecked="{Binding IgnoreCase}" />
+            </WrapPanel>
+        </Grid>
+    </DataTemplate>
+
+</ResourceDictionary>
